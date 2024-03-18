@@ -1,18 +1,20 @@
-body {
-  margin: 0 auto;
-  font-family: 'Nunito Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body > div {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+body {
+  margin: 0 auto;
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #836131;
+  background-color: #000000;
 }
 
 code {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 ul {
@@ -22,4 +24,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: #836131;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
 }
