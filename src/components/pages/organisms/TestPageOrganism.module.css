@@ -11,10 +11,10 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 64rem) {
     flex-wrap: nowrap;
-    font-size: 2rem;
-    justify-content: space-evenly;
+    font-size: 1.8rem;
+    justify-content: space-between;
     gap: 10%;
     padding: 0 10%;
   }
