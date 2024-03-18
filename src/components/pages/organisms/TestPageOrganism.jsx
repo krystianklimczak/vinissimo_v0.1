@@ -1,8 +1,10 @@
+import css from './TestPageOrganism.module.css';
+
 const TestPageOrganism = ({ mainImage, children }) => {
   return (
     <>
       {mainImage}
-      <div>{children}</div>
+      <div className={css.TestPageOrganism}>{children}</div>
     </>
   );
 };
