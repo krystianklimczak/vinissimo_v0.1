@@ -1,0 +1,7 @@
+.TitleAtom {
+  font-size: 2rem;
+  width: 25rem;
+  @media screen and (min-width: 1280px) {
+    width: 43.75rem;
+  }
+}
