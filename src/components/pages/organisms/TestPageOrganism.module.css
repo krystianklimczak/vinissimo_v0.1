@@ -11,13 +11,6 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-  & > img {
-    width: auto;
-    height: auto;
-    @media screen and (min-width: 48rem) {
-      max-width: 40%;
-    }
-  }
   @media screen and (min-width: 48rem) {
     flex-wrap: nowrap;
     font-size: 2rem;
