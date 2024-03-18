@@ -1,14 +1,16 @@
 .TestPageOrganism {
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1.87rem;
+  align-items: center;
   & > div {
     margin-left: 1.25rem;
     max-width: 12.5rem;
   }
   & > img {
     max-width: 18.7rem;
+    max-height: 26rem;
   }
 }
