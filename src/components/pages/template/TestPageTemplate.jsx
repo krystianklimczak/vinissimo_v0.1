@@ -1,6 +1,6 @@
-import { ImageAtom } from '../atoms/ImageAtom';
-import { ParagraphAtom } from '../atoms/ParagraphAtom';
-import { TitleAtom } from '../atoms/TitleAtom';
+import { ImageAtom } from '../atoms/ImageAtom/ImageAtom';
+import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom';
+import { TitleAtom } from '../atoms/TitleAtom/TitleAtom';
 import { ListMolecule } from '../molecules/ListMolecule';
 import { TestPageOrganism } from '../organisms/TestPageOrganism';
 
@@ -17,28 +17,32 @@ const publicAccess = name => process.env.PUBLIC_URL + name;
 
 const TestPageTemplate = () => {
   return (
-    <TestPageOrganism
-      mainImage={
+    <>
+      <TestPageOrganism
+        mainImage={
+          <ImageAtom
+            src={publicAccess('/v1.jpg')}
+            alt="Restaurant name with wine on the background"
+          />
+        }
+      >
         <ImageAtom
-          src={publicAccess('/v1.jpg')}
+          src={publicAccess('/BabyD.jpeg')}
           alt="Restaurant name with wine on the background"
         />
-      }
-    >
-      <ImageAtom
-        src={publicAccess('/BabyD.jpeg')}
-        alt="Restaurant name with wine on the background"
-      />
-      <ParagraphAtom text="Vinissimo Restaurant & Wine Bar (dawniej Sztuczka Bistro)" />
-      <ParagraphAtom text="Sopot, ul. Bema 6" />
-      <ParagraphAtom text="Skontaktuj się z nami:" />
-      <ListMolecule items={contactItems} />
+        <div>
+          <ParagraphAtom text="Vinissimo Restaurant & Wine Bar (dawniej Sztuczka Bistro)" />
+          <ParagraphAtom text="Sopot, ul. Bema 6" />
+          <ParagraphAtom text="Skontaktuj się z nami:" />
+          <ListMolecule items={contactItems} />
+        </div>
+      </TestPageOrganism>
       <TitleAtom
         text=" Savor the Anticipation: Our Website is Fermenting Something
-          Extraordinary! Stay Tuned for a Tantalizing Blend of Wine and Culinary
-          Delights."
+        Extraordinary! Stay Tuned for a Tantalizing Blend of Wine and Culinary
+        Delights."
       />
-    </TestPageOrganism>
+    </>
   );
 };
 
