@@ -12,5 +12,9 @@
   & > img {
     max-width: 18.7rem;
     max-height: 26rem;
+    @media screen and (min-width: 48rem) {
+      max-width: 29rem;
+      max-height: 38rem;
+    }
   }
 }
