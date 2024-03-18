@@ -5,4 +5,4 @@ function App() {
   return <TestPage />;
 }
 
-export default App;
+export { App };
