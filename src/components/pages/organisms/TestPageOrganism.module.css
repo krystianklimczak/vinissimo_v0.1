@@ -7,10 +7,11 @@
   height: 100vh;
   width: 100%;
   & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
   & > img {
-    /* max-width: 18.7rem;
-    max-height: 26rem; */
     width: auto;
     height: auto;
     @media screen and (min-width: 48rem) {
