@@ -31,17 +31,17 @@ const TestPageTemplate = () => {
           alt="Restaurant name with wine on the background"
         />
         <div>
+          <TitleAtom
+            text=" Savor the Anticipation: Our Website is Fermenting Something
+        Extraordinary! Stay Tuned for a Tantalizing Blend of Wine and Culinary
+        Delights."
+          />
           <ParagraphAtom text="Vinissimo Restaurant & Wine Bar (dawniej Sztuczka Bistro)" />
           <ParagraphAtom text="Sopot, ul. Bema 6" />
           <ParagraphAtom text="Skontaktuj się z nami:" />
           <ListMolecule items={contactItems} />
         </div>
       </TestPageOrganism>
-      <TitleAtom
-        text=" Savor the Anticipation: Our Website is Fermenting Something
-        Extraordinary! Stay Tuned for a Tantalizing Blend of Wine and Culinary
-        Delights."
-      />
     </>
   );
 };
