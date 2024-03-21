@@ -1,4 +1,4 @@
-import { TestPageTemplate } from './template/TestPageTemplate';
+import { TestPageTemplate } from './template/TestPageTemplate.jsx';
 
 const TestPage = () => {
   return <TestPageTemplate />;

@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 
-import { ContactLinkAtom } from '../atoms/ContactLinkAtom/ContactLinkAtom';
+import { ContactLinkAtom } from '../atoms/ContactLinkAtom/ContactLinkAtom.jsx';
 
 const ListMolecule = ({ items }) => {
   const listItems = items.map(item => {

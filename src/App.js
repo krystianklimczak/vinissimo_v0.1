@@ -1,4 +1,4 @@
-import { TestPage } from './components/pages/TestPage';
+import { TestPage } from './components/pages/TestPage.jsx';
 
 function App() {
   return <TestPage />;

@@ -1,8 +1,8 @@
-import { ImageAtom } from '../atoms/ImageAtom/ImageAtom';
-import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom';
-import { TitleAtom } from '../atoms/TitleAtom/TitleAtom';
-import { ListMolecule } from '../molecules/ListMolecule';
-import { TestPageOrganism } from '../organisms/TestPageOrganism';
+import { ImageAtom } from '../atoms/ImageAtom/ImageAtom.jsx';
+import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom.jsx';
+import { TitleAtom } from '../atoms/TitleAtom/TitleAtom.jsx';
+import { ListMolecule } from '../molecules/ListMolecule.jsx';
+import { TestPageOrganism } from '../organisms/TestPageOrganism.jsx';
 
 const contactItems = [
   { href: 'mailto:booking@vinissimorestaurant.pl', text: 'booking@vinissimorestaurant.pl' },
