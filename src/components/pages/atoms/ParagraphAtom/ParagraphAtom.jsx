@@ -1,5 +1,5 @@
-const ParagraphAtom = ({ text }) => {
+function ParagraphAtom({ text }) {
   return <p>{text}</p>;
-};
+}
 
 export { ParagraphAtom };
