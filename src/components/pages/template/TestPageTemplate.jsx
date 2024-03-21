@@ -1,18 +1,12 @@
 import { ImageAtom } from '../atoms/ImageAtom/ImageAtom.jsx';
-import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom.jsx';
 import { TitleAtom } from '../atoms/TitleAtom/TitleAtom.jsx';
 import { ListMolecule } from '../molecules/ListMolecule.jsx';
 import { TestPageOrganism } from '../organisms/TestPageOrganism.jsx';
+import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom.jsx';
 
-const contactItems = [
-  { href: 'mailto:booking@vinissimorestaurant.pl', text: 'booking@vinissimorestaurant.pl' },
-  { href: 'tel:+48881334449', text: '+48 881 334 449' },
-  { href: 'https://www.instagram.com/vinissimorestaurant/', text: 'Instagram' },
-  {
-    href: 'https://www.facebook.com/vinissimorestaurant/?paipv=0&eav=AfZD_1vWDqDDMstTalt7K_3sV0oaHJKbfCPJ6W1njwZ1VgrVKQl2JglTz9fndKLvb4w&_rdr',
-    text: 'Facebook',
-  },
-];
+import links from '../../../data/contactLinks.json';
+const contactItems = links.links;
+
 const publicAccess = name => process.env.PUBLIC_URL + '/images' + name;
 
 const TestPageTemplate = () => {
