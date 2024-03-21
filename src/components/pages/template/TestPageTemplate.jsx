@@ -13,7 +13,7 @@ const contactItems = [
     text: 'Facebook',
   },
 ];
-const publicAccess = name => process.env.PUBLIC_URL + name;
+const publicAccess = name => process.env.PUBLIC_URL + '/images' + name;
 
 const TestPageTemplate = () => {
   return (
