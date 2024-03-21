@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 import { ContactLinkAtom } from '../atoms/ContactLinkAtom/ContactLinkAtom.jsx';
 
-const ListMolecule = ({ items }) => {
+function ListMolecule({ items }) {
   const listItems = items.map(item => {
     const { href, text } = item;
     const id = nanoid();
@@ -13,6 +13,6 @@ const ListMolecule = ({ items }) => {
     );
   });
   return <ul>{listItems}</ul>;
-};
+}
 
 export { ListMolecule };

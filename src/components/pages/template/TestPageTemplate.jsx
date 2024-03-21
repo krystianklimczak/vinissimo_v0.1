@@ -10,7 +10,7 @@ import css from './TestPageTemplate.module.css';
 const contactItems = links.links;
 const publicAccess = name => process.env.PUBLIC_URL + '/images' + name;
 
-const TestPageTemplate = () => {
+function TestPageTemplate() {
   return (
     <>
       <TestPageOrganism
@@ -37,6 +37,6 @@ const TestPageTemplate = () => {
       </TestPageOrganism>
     </>
   );
-};
+}
 
 export { TestPageTemplate };
