@@ -23,7 +23,13 @@
   /* 24px */
   --font-size-drop-down-menu: 1.5rem;
 
-  --bp-mobile: 30em;
-  --bp-tablet: 48em;
-  --bp-desktop: 80em;
+  /* 34px */
+  --font-size-buttons-desktop: 2.125rem;
+
+  /* 26px */
+  --font-size-buttons-tablet: 1.625rem;
+
+  --bp-mobile: 30rem;
+  --bp-tablet: 48rem;
+  --bp-desktop: 80rem;
 }
