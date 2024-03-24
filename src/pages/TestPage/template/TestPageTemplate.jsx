@@ -1,7 +1,7 @@
-import { TitleAtom } from '../atoms/TitleAtom/TitleAtom.jsx';
-import { ListMolecule } from '../molecules/ListMolecule.jsx';
+import { TitleAtom } from '../../atoms/TitleAtom/TitleAtom.jsx';
+import { ListMolecule } from '../../../components/molecules/ListMolecule.jsx';
 import { TestPageOrganism } from '../organisms/TestPageOrganism.jsx';
-import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom.jsx';
+import { ParagraphAtom } from '../../atoms/ParagraphAtom/ParagraphAtom.jsx';
 
 import links from '../../../data/contactLinks.json';
 
