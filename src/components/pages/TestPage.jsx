@@ -1,7 +1,7 @@
-import { TestPageTemplate } from './template/TestPageTemplate';
+import { TestPageTemplate } from './template/TestPageTemplate.jsx';
 
-const TestPage = () => {
+function TestPage() {
   return <TestPageTemplate />;
-};
+}
 
 export { TestPage };
