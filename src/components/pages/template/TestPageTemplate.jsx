@@ -22,7 +22,10 @@ function TestPageTemplate() {
           />
         }
       >
-        <img src={publicAccess('/BabyD.jpeg')} alt={'Bottle of the wine with glass'} />
+        <img
+          src={publicAccess('/BabyD.jpeg')}
+          alt={'Bottle of the wine with glass'}
+        />
         <div>
           <TitleAtom
             text=" Savor the Anticipation: Our Website is Fermenting Something
