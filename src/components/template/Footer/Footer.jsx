@@ -1,6 +1,8 @@
+import css from './Footer.module.css';
+
 function Footer() {
   return (
-    <footer>
+    <footer className={css.footer}>
       <p>Vinissimo Restaurant & Wine</p>
       <p>Bar ul. Bema 6 Sopot</p>
       <p>pon-sb: 14-22</p>

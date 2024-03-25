@@ -1,0 +1,7 @@
+.footer {
+  color: var(--text-color);
+  font-size: var(--font-size-medium);
+  @media screen and (min-width: 64px) {
+    font-size: var(--font-size-drop-down-menu);
+  }
+}
