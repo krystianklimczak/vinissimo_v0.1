@@ -1,7 +1,24 @@
 .footer {
   color: var(--text-color);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.43rem 0.93rem;
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__links {
   font-size: var(--font-size-medium);
-  @media screen and (min-width: 64px) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  @media screen and (min-width: 64rem) {
+    flex-direction: row;
+    align-items: center;
     font-size: var(--font-size-drop-down-menu);
   }
 }
