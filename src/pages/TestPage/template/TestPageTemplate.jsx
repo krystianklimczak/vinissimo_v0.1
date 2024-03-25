@@ -1,7 +1,7 @@
-import { TitleAtom } from '../atoms/TitleAtom/TitleAtom.jsx';
-import { ListMolecule } from '../molecules/ListMolecule.jsx';
+import { TitleAtom } from '../../../components/atoms/TitleAtom/TitleAtom.jsx';
+import { ListMolecule } from '../../../components/molecules/ListMolecule.jsx';
 import { TestPageOrganism } from '../organisms/TestPageOrganism.jsx';
-import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom.jsx';
+import { ParagraphAtom } from '../../../components/atoms/ParagraphAtom/ParagraphAtom.jsx';
 
 import links from '../../../data/contactLinks.json';
 
@@ -22,7 +22,10 @@ function TestPageTemplate() {
           />
         }
       >
-        <img src={publicAccess('/BabyD.jpeg')} alt={'Bottle of the wine with glass'} />
+        <img
+          src={publicAccess('/BabyD.jpeg')}
+          alt={'Bottle of the wine with glass'}
+        />
         <div>
           <TitleAtom
             text=" Savor the Anticipation: Our Website is Fermenting Something
