@@ -1,4 +1,4 @@
-import { TestPageTemplate } from './template/TestPageTemplate.jsx';
+import { TestPageTemplate } from '../../components/template/TestPageTemplate.jsx';
 
 function TestPage() {
   return <TestPageTemplate />;
