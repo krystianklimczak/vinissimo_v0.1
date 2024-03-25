@@ -1,5 +1,4 @@
 .TestPageOrganism {
-  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -18,15 +17,14 @@
       max-width: 50%;
     }
   }
-
   & > img {
     width: 100%;
     @media screen and (min-width: 48rem) {
       width: calc(100vw / 2);
     }
     @media screen and (min-width: 64rem) {
-      width: calc(100vw / 2.5);
-      padding: 1rem 0;
+      width: fit-content;
+      height: 100%;
     }
   }
   @media screen and (min-width: 48rem) {
