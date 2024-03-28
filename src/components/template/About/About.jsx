@@ -1,5 +1,5 @@
 import { Section } from '../Section/Section';
-import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.jsx';
+import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
 
 function About() {
   const screen = CheckMediaQuery();
