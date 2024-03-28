@@ -1,21 +1,18 @@
 import { useMediaQuery } from '@mui/material';
 
-function CheckMediaQuery(mobileOption, tabletOption, desktopOption) {
-  const matchesMobile = useMediaQuery('(min-width:30em)');
-  const matchesTablet = useMediaQuery('(min-width:48em)');
-  const matchesDesktop = useMediaQuery('(min-width:80em)');
+function CheckMediaQuery() {
+  const matchesMobile = useMediaQuery('(min-width:20rem)');
+  const matchesTablet = useMediaQuery('(min-width:48rem)');
+  const matchesDesktop = useMediaQuery('(min-width:80rem)');
 
   if (matchesDesktop) {
-    console.log('Desktop view');
-    return desktopOption;
+    return 'desktop';
   }
   if (matchesTablet) {
-    console.log('Tablet view');
-    return tabletOption;
+    return 'tablet';
   }
   if (matchesMobile) {
-    console.log('Mobile view');
-    return mobileOption;
+    return 'mobile';
   }
 }
 
