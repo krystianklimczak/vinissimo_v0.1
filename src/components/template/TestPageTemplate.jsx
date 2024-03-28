@@ -1,5 +1,6 @@
 import { TitleAtom } from '../atoms/TitleAtom/TitleAtom.jsx';
 import { ListMolecule } from '../molecules/ListMolecule.jsx';
+import { publicAccess } from '../../helpers/publicAccess.js';
 import { TestPageOrganism } from '../organisms/TestPageOrganism.jsx';
 import { ParagraphAtom } from '../atoms/ParagraphAtom/ParagraphAtom.jsx';
 
@@ -8,7 +9,6 @@ import links from '../../data/contactLinks.json';
 import css from './TestPageTemplate.module.css';
 
 const contactItems = links.links;
-const publicAccess = name => process.env.PUBLIC_URL + '/images' + name;
 
 function TestPageTemplate() {
   return (
