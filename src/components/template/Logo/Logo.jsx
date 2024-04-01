@@ -1,13 +1,11 @@
 import css from './Logo.module.css';
+import { Icon } from '../../atoms/Icon/Icon';
 
 function Logo() {
   return (
-    <img
-      className={css.logo}
-      width="76"
-      height="72"
-      alt="Logo of Vinissimo restuarant"
-    />
+    <>
+      <Icon id="logo-desktop" className={css.logo} />
+    </>
   );
 }
 
