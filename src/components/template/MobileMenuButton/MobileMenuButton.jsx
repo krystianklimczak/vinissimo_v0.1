@@ -1,3 +1,4 @@
+import { Icon } from '../../atoms/Icon/Icon';
 import css from './MobileMenuButton.module.css';
 
 function MobileMenuButton() {
@@ -6,7 +7,7 @@ function MobileMenuButton() {
   };
   return (
     <button className={css.mobileMenuButton} onClick={handleClick}>
-      Open Mobile Menu
+      <Icon id="burger-menu" />
     </button>
   );
 }
