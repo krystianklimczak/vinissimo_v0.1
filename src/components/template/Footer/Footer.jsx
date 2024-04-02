@@ -1,3 +1,5 @@
+import { Icon } from '../../atoms/Icon/Icon';
+
 import css from './Footer.module.css';
 
 function Footer() {
@@ -18,22 +20,8 @@ function Footer() {
         </div>
       </div>
       <div className={css.footer__icons}>
-        <img
-          style={{
-            width: '100px',
-            height: '100px',
-            background: 'black',
-          }}
-          alt="Vinissimo instagram"
-        />
-        <img
-          style={{
-            width: '100px',
-            height: '100px',
-            background: 'black',
-          }}
-          alt="Vinissimo facebook"
-        />
+        <Icon id="instagram" />
+        <Icon id="facebook" />
       </div>
     </footer>
   );

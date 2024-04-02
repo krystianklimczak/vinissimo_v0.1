@@ -3,19 +3,45 @@
   display: flex;
   justify-content: space-evenly;
   padding: 2.43rem 0.93rem;
+  align-items: center;
 }
 
 .footer__icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1.25rem;
+  height: fit-content;
+  fill: var(--text-color);
+  @media screen and (min-width: 64rem) {
+    gap: 0.6rem;
+  }
+  & > svg {
+    width: 1.875rem;
+    height: 1.875rem;
+    @media screen and (min-width: 23rem) {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+    @media screen and (min-width: 48rem) {
+      width: 3.75rem;
+      height: 3.75rem;
+    }
+    @media screen and (min-width: 64rem) {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+  }
 }
 
 .footer__links {
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  @media screen and (min-width: 23rem) {
+    font-size: var(--font-size-medium);
+  }
   @media screen and (min-width: 64rem) {
     flex-direction: row;
     align-items: center;
