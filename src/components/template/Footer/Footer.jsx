@@ -14,8 +14,8 @@ function Footer() {
     <footer className={css.footer}>
       <div className={css.footer__links}>
         <div>
-          <p>Vinissimo Restaurant & Wine</p>
-          <p>Bar ul. Bema 6 Sopot</p>
+          <p>Vinissimo Restaurant & Wine Bar</p>
+          <p>ul. Bema 6 Sopot</p>
         </div>
         <div>
           <p>pon-sb: 14-22</p>
