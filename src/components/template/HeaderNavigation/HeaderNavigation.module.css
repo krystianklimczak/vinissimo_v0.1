@@ -2,6 +2,10 @@
   display: none;
   & > a {
     color: var(--website-secondary-color);
+    transition: color linear 0.6s;
+    &:hover {
+      color: rgb(199, 162, 111);
+    }
   }
   @media screen and (min-width: 64rem) {
     display: flex;
