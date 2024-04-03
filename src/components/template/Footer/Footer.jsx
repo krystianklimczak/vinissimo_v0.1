@@ -1,8 +1,12 @@
+import { findLink } from '../../../helpers/findLink';
+import { ContactLinkAtom } from '../../atoms/ContactLinkAtom/ContactLinkAtom';
 import { Icon } from '../../atoms/Icon/Icon';
 
 import css from './Footer.module.css';
 
 function Footer() {
+  const { href: hrefInstagram } = findLink('instagram');
+  const { href: hrefFacebook } = findLink('facebook');
   return (
     <footer className={css.footer}>
       <div className={css.footer__links}>
@@ -20,8 +24,14 @@ function Footer() {
         </div>
       </div>
       <div className={css.footer__icons}>
-        <Icon id="instagram" />
-        <Icon id="facebook" />
+        <ContactLinkAtom
+          children={<Icon id="instagram" />}
+          href={hrefInstagram}
+        />
+        <ContactLinkAtom
+          children={<Icon id="facebook" />}
+          href={hrefFacebook}
+        />
       </div>
     </footer>
   );
