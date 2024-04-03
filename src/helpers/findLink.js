@@ -4,4 +4,9 @@ function findLink(id) {
   return links.links.find(link => link.id === id);
 }
 
-export { findLink };
+const { href: hrefInstagram } = findLink('instagram');
+const { href: hrefFacebook } = findLink('facebook');
+const { href: hrefPhoneNumber } = findLink('phone');
+const { href: hrefEmail } = findLink('mail');
+
+export { findLink, hrefInstagram, hrefFacebook, hrefPhoneNumber, hrefEmail };
