@@ -17,9 +17,13 @@
     gap: 0.6rem;
   }
   & > a > svg {
-    fill: var(--text-color);
     width: 1.875rem;
     height: 1.875rem;
+    fill: var(--text-color);
+    transition: fill linear 1s;
+    &:hover {
+      fill: var(--website-secondary-color);
+    }
     @media screen and (min-width: 23rem) {
       width: 2.8rem;
       height: 2.8rem;
@@ -42,7 +46,12 @@
   gap: 1.5rem;
   & > div > a {
     color: var(--text-color);
+    transition: color linear 1s;
+    &:hover {
+      color: var(--website-secondary-color);
+    }
   }
+
   @media screen and (min-width: 23rem) {
     font-size: var(--font-size-medium);
   }
