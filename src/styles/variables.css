@@ -31,6 +31,9 @@
   /* 26px */
   --font-size-buttons-tablet: 1.625rem;
 
+  --gap--small: 3.125rem;
+  --gap--large: 4.5rem;
+
   --bp-mobile: 30rem;
   --bp-tablet: 48rem;
   --bp-desktop: 80rem;
