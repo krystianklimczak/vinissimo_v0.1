@@ -1,4 +1,5 @@
 import { Section } from '../Section/Section';
+import { Button } from '../../atoms/Button/Button';
 
 function Reservation() {
   return (
@@ -17,7 +18,7 @@ function Reservation() {
         magni mollitia tenetur? Architecto dolorum natus mollitia accusantium
         obcaecati vero perferendis earum iusto consectetur praesentium.
       </p>
-      <button>Zarezerwuj stolik</button>
+      <Button text="Zarezerwuj stolik" />
     </Section>
   );
 }

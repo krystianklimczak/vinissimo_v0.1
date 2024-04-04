@@ -1,4 +1,6 @@
+import { Icon } from '../../atoms/Icon/Icon';
 import { Section } from '../Section/Section';
+import { Button } from '../../atoms/Button/Button';
 
 function Menu() {
   return (
@@ -13,7 +15,7 @@ function Menu() {
         soluta dolores!
       </p>
 
-      <button>wiecej</button>
+      <Button text={<span>Więcej</span>} icon={<Icon id="arrow-down" />} />
     </Section>
   );
 }
