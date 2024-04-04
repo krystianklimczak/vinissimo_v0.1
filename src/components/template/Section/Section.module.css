@@ -4,17 +4,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--website-main-color);
+  width: 100vw;
+  height: 100vh;
+  color: var(--text-color);
+  @media screen and (min-width: 64rem) {
+    height: 100%;
+    font-size: var(--font-size-medium);
+  }
+
   & > h2 {
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-large);
+    padding: var(--gap--small) 0;
     @media screen and (min-width: 64rem) {
       font-size: var(--font-size-title-desktop);
-    }
-  }
-  & > p {
-    color: var(--text-color);
-    @media screen and (min-width: 64rem) {
-      font-size: var(--font-size-medium);
+      padding: var(--gap--large) 0;
     }
   }
 }
