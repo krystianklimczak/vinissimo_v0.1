@@ -1,7 +1,10 @@
 import { Section } from '../Section/Section';
 import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
 
-import css from './Abous.module.css';
+import { publicAccess } from '../../../helpers/publicAccess.js';
+
+import css from './About.module.css';
+
 function About() {
   const screen = CheckMediaQuery();
   return (
@@ -10,11 +13,8 @@ function About() {
         <div className={css.about}>
           <div>
             <img
-              style={{
-                background: 'black',
-              }}
-              src="path_to_image"
-              alt="Main billboard"
+              src={publicAccess('/Table.jpg')}
+              alt={'A restaurant table adorned with a plate and flowers.'}
             />
             <p>
               Vinissimo Restaurant &amp; Wine Bar to nowa marka, pod którą od
@@ -57,24 +57,16 @@ function About() {
               Zapraszamy!
             </p>
             <img
-              style={{
-                background: 'black',
-              }}
-              src="path_to_image"
-              alt="Main billboard"
+              src={publicAccess('/Seabass.jpg')}
+              alt={'A restaurant table set with a bottle of wine and a dish.'}
             />
           </div>
         </div>
       ) : (
-        <>
+        <div className={css.about}>
           <img
-            style={{
-              width: '258px',
-              height: '328px',
-              background: 'black',
-            }}
-            src="path_to_image"
-            alt="Main billboard"
+            src={publicAccess('/Seabass.jpg')}
+            alt={'A restaurant table set with a bottle of wine and a dish.'}
           />
           <p>
             Vinissimo Restaurant & Wine Bar to nowa marka, pod którą od lutego
@@ -84,7 +76,7 @@ function About() {
             niezmiennie serwuje przepyszną i minimalistyczną kuchnię, wspartą
             ogromną selekcją win i nienagannym serwisem.
           </p>
-        </>
+        </div>
       )}
     </Section>
   );
