@@ -3,7 +3,10 @@ import { Section } from '../Section/Section.jsx';
 import { Button } from '../../atoms/Button/Button.jsx';
 import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
 
+import css from './Menu.module.css';
+
 function Menu() {
+  const screen = CheckMediaQuery();
   return (
     <Section title="menu">
       <h3>przystawki</h3>
@@ -16,7 +19,15 @@ function Menu() {
         soluta dolores!
       </p>
 
-      <Button text={<span>Więcej</span>} icon={<Icon id="arrow-down" />} />
+      {screen === 'desktop' ? (
+        <div className={css.menu__buttons}>
+          <Button text="wina" />
+          <Button text="wina na kieliszki" />
+          <Button text="alkohole" />
+        </div>
+      ) : (
+        <Button text={<span>Więcej</span>} icon={<Icon id="arrow-down" />} />
+      )}
     </Section>
   );
 }
