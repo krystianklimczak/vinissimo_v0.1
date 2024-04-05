@@ -4,10 +4,10 @@ import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
 import css from './Logo.module.css';
 
 function Logo() {
-  const media = CheckMediaQuery();
+  const screen = CheckMediaQuery();
   return (
     <>
-      {media === 'mobile' ? (
+      {screen === 'mobile' ? (
         <Icon id="logo-mobile" className={css.logo} />
       ) : (
         <Icon id="logo-desktop" className={css.logo} />
