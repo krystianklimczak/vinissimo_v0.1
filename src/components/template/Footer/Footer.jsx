@@ -3,9 +3,9 @@ import {
   hrefFacebook,
   hrefInstagram,
   hrefPhoneNumber,
-} from '../../../helpers/findLink';
-import { Icon } from '../../atoms/Icon/Icon';
-import { ContactLinkAtom } from '../../atoms/ContactLinkAtom/ContactLinkAtom';
+} from '../../../helpers/findLink.js';
+import { Icon } from '../../atoms/Icon/Icon.jsx';
+import { ContactLinkAtom } from '../../atoms/ContactLinkAtom/ContactLinkAtom.jsx';
 
 import css from './Footer.module.css';
 

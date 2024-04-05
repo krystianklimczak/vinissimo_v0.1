@@ -1,5 +1,5 @@
-import { Section } from '../Section/Section';
-import { Button } from '../../atoms/Button/Button';
+import { Section } from '../Section/Section.jsx';
+import { Button } from '../../atoms/Button/Button.jsx';
 
 function Reservation() {
   return (

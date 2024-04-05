@@ -1,5 +1,5 @@
-import { Icon } from '../../atoms/Icon/Icon';
-import { CheckMediaQuery } from '../../../helpers/checkMediaQuery';
+import { Icon } from '../../atoms/Icon/Icon.jsx';
+import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
 
 import css from './Logo.module.css';
 

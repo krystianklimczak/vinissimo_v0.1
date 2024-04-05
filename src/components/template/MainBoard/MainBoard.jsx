@@ -1,4 +1,4 @@
-import { Section } from '../Section/Section';
+import { Section } from '../Section/Section.jsx';
 
 import css from './MainBoard.module.css';
 

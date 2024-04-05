@@ -1,6 +1,7 @@
-import { Icon } from '../../atoms/Icon/Icon';
-import { Section } from '../Section/Section';
-import { Button } from '../../atoms/Button/Button';
+import { Icon } from '../../atoms/Icon/Icon.jsx';
+import { Section } from '../Section/Section.jsx';
+import { Button } from '../../atoms/Button/Button.jsx';
+import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
 
 function Menu() {
   return (

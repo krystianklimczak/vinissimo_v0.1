@@ -1,8 +1,8 @@
-import { Logo } from '../Logo/Logo';
+import { Logo } from '../Logo/Logo.jsx';
 
 import css from './Header.module.css';
-import { MobileMenuButton } from '../MobileMenuButton/MobileMenuButton';
-import { HeaderNavigation } from '../HeaderNavigation/HeaderNavigation';
+import { MobileMenuButton } from '../MobileMenuButton/MobileMenuButton.jsx';
+import { HeaderNavigation } from '../HeaderNavigation/HeaderNavigation.jsx';
 
 function Header() {
   return (

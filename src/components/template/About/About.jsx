@@ -1,4 +1,4 @@
-import { Section } from '../Section/Section';
+import { Section } from '../Section/Section.jsx';
 import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
 
 import { publicAccess } from '../../../helpers/publicAccess.js';
