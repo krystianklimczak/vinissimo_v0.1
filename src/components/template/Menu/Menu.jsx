@@ -2,24 +2,34 @@ import { Icon } from '../../atoms/Icon/Icon.jsx';
 import { Section } from '../Section/Section.jsx';
 import { Button } from '../../atoms/Button/Button.jsx';
 import { CheckMediaQuery } from '../../../helpers/checkMediaQuery.js';
+import { MenuListOrganism } from '../../../pages/Home/organisms/MenuListOrganism.jsx';
+
+import menu from '../../../data/menu.json';
 
 import css from './Menu.module.css';
 
 function Menu() {
   const screen = CheckMediaQuery();
+  const soups = MenuListOrganism('soups', menu, 'zupa');
+  const sides = MenuListOrganism('sides', menu, 'dodatki');
+  const cheeses = MenuListOrganism('cheeses', menu, 'sery');
+  const mains = MenuListOrganism('mains', menu, 'dania główne');
+  const desserts = MenuListOrganism('desserts', menu, 'na słodko');
+  const starters = MenuListOrganism('starters', menu, 'przystawki');
+
   return (
     <Section title="menu">
       <div className={css.menu}>
-        <h3>przystawki</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corporis
-          iusto ipsam ipsum perferendis, enim placeat similique doloribus totam
-          veniam porro at autem rem pariatur facere sint suscipit esse dolores
-          obcaecati quas ea corrupti neque repudiandae quod? Laboriosam
-          architecto, ex sint eum sapiente temporibus animi accusamus quis
-          quaerat soluta dolores!
-        </p>
-
+        <div>
+          {starters}
+          {cheeses}
+          {soups}
+        </div>
+        <div>
+          {mains}
+          {sides}
+          {desserts}
+        </div>
         <div className={css.menu__buttons}>
           {screen === 'desktop' ? (
             <>
