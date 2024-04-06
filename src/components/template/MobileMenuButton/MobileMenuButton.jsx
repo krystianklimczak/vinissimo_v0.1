@@ -1,4 +1,5 @@
 import { Icon } from '../../atoms/Icon/Icon.jsx';
+
 import css from './MobileMenuButton.module.css';
 
 function MobileMenuButton() {
