@@ -1,5 +1,7 @@
 import { nanoid } from 'nanoid';
 
+import css from './MenuListOrganism.module.css';
+
 function MenuListOrganism(category, data, title) {
   const items = data[category];
   const item = items.map(item => {
@@ -20,7 +22,7 @@ function MenuListOrganism(category, data, title) {
   return (
     <>
       <h3>{title}</h3>
-      <ul>{item}</ul>
+      <ul className={css.menuListOrganism}>{item}</ul>
     </>
   );
 }
