@@ -20,15 +20,17 @@ function Menu() {
   return (
     <Section title="menu">
       <div className={css.menu}>
-        <div>
-          {starters}
-          {cheeses}
-          {soups}
-        </div>
-        <div>
-          {mains}
-          {sides}
-          {desserts}
+        <div className={css.menu__content}>
+          <div>
+            {starters}
+            {cheeses}
+            {soups}
+          </div>
+          <div>
+            {mains}
+            {sides}
+            {desserts}
+          </div>
         </div>
         <div className={css.menu__buttons}>
           {screen === 'desktop' ? (
